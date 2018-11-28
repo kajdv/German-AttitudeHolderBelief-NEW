@@ -71,9 +71,9 @@ var items = [
     )]                     
 ];
 
-PennController.GetTable( "GER-datasource-AH-bel.csv" ).setLabel("Expt");
+//PennController.GetTable( "GER-datasource-AH-bel.csv" ).setLabel("Expt");
 
-PennController.FeedItems( PennController.GetTable( "GER-datasource-AH-bel.csv" ),//.filter("Expt","experiment"),
+PennController.FeedItems( PennController.GetTable( "GER-datasource-AH-bel.csv" ).setLabel("Expt"),//.filter("Expt","experiment"),
     (item) => PennController(
         newTimer("blank", 1000)
             .start()
